@@ -2,6 +2,8 @@
 
 A sleek Chrome extension that instantly analyzes the time and space complexity of your coding solutions using Google's Gemini AI. Perfect for NeetCode and LeetCode practice sessions!
 
+Yes, I know, I have my API key hardcoded. ;)
+
 ## ✨ What It Does
 
 Ever wondered if your solution is optimal? This extension automatically detects your code and provides instant complexity analysis with optimization suggestions. No more guessing – get AI-powered insights right in your browser.
