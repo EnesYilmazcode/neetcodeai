@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "NeetCode Complexity Analyzer",
+  "version": "1.0",
+  "description": "Analyze time and space complexity of your NeetCode solutions using Google Gemini AI",
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "host_permissions": [
+    "https://generativelanguage.googleapis.com/*"
+  ],
+  "action": {
+    "default_title": "Analyze Code Complexity"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://neetcode.io/*", "https://leetcode.com/*"],
+      "js": ["content.js"],
+      "css": ["floating-ui.css"],
+      "run_at": "document_end"
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  }
+}
